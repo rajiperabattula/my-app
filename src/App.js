@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import ListPage from './Components/ListPageContainer.js';
-import DetailsPage from './Components/DetailsPageContainer.js';
+import React, { useState } from 'react';
 import {BrowserRouter,Route,Routes} from 'react-router-dom';
 import {createBrowserHistory} from 'history';
 import {Provider} from 'react-redux';
 import store from './redux/store';
+import ListPage from './Components/ListPageContainer.js';
+import DetailsPage from './Components/DetailsPageContainer.js';
 
 function App() {
   const [details,setDetails]=useState({});
